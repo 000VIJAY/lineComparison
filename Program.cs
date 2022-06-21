@@ -30,15 +30,19 @@ int c1 = a2 - a1;
 int c2 = b2 - b1;
 double numb1 = Math.Pow(c1, 2);
 double numb2 = Math.Pow(c2, 2);
-double distance1 = Math.Sqrt(numb1 + numb2);
+double distanceOne = Math.Sqrt(numb1 + numb2);
 
-Console.WriteLine("distance1 : " + distance1);
+Console.WriteLine("distance1 : " + distanceOne);
 
-if (distance == distance1)
+if (distance == distanceOne)
 {
     Console.WriteLine("equal");
 }
+else if (distance < distanceOne)
+{
+    Console.WriteLine("distance < distanceOne");
+}
 else
 {
-    Console.WriteLine("not equal");
+    Console.WriteLine("distance > distanceOne");
 }
